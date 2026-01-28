@@ -25,6 +25,7 @@
 #include "Dialect/DIP/DIPDialect.h"
 #include "Dialect/Gemmini/GemminiDialect.h"
 #include "Dialect/IME/IMEDialect.h"
+#include "Dialect/MQ/MQHigh/MQHighDialect.h"
 #include "Dialect/RVV/RVVDialect.h"
 #include "Dialect/VectorExp/VectorExpDialect.h"
 
@@ -64,6 +65,7 @@ void mlir::buddy::registerAllDialects(mlir::DialectRegistry &registry) {
   registry.insert<::buddy::dip::DIPDialect>();
   registry.insert<::buddy::gemmini::GemminiDialect>();
   registry.insert<::buddy::ime::IMEDialect>();
+  registry.insert<::buddy::mqhigh::MQHighDialect>();
   registry.insert<::buddy::rvv::RVVDialect>();
   registry.insert<::buddy::vector_exp::VectorExpDialect>();
 }

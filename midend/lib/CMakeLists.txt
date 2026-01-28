@@ -12,6 +12,7 @@ set(LinkedLibs
   MLIRSupport
   ${extension_libs}
 
+  # MQHigh
   ConvOptimization
   CBConvVectorization
   LowerBudPass
